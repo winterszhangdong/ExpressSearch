@@ -31,7 +31,6 @@ public class RenewTask extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         HttpUtil httpUtil = new HttpUtil(params[0]);
-//        String response = httpUtil.sendHttpRequest();
         return httpUtil.postHttpRequest(this.parmList);
     }
 

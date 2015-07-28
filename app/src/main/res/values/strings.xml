@@ -4,5 +4,6 @@
     <string name="express_content">开门！你的快递！</string>
     <string name="button_text">提交</string>
     <string name="hint">输入你的快递单号</string>
+    <string name="remember">记住快递单号</string>
     <string name="action_settings">Settings</string>
 </resources>
