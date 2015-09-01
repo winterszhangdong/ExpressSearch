@@ -14,14 +14,15 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint"
             android:singleLine="true"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:elevation="10dp"/>
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_text"
-            />
+            android:elevation="100dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -31,7 +32,8 @@
         <CheckBox
             android:id="@+id/check_box"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:checked="false" />
 
         <TextView
             android:id="@+id/remember_text"
@@ -68,7 +70,6 @@
                 android:gravity="center"/>
         </ScrollView>
     </LinearLayout>
-
 
 </LinearLayout>
 

@@ -1,14 +1,13 @@
 package com.example.winters.express;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -21,7 +20,7 @@ import org.apache.http.message.BasicNameValuePair;
 import java.util.ArrayList;
 
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private String address = "http://winterszhang.sinaapp.com/search_express";
     private TextView textView;
     private EditText editText;
@@ -33,7 +32,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.edit_text);
         rememberCheck = (CheckBox) findViewById(R.id.check_box);
